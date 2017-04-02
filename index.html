@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="style.css" />
+	<script type="text/jscript" src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<header>
+			<h1>Header</h1>
+			<form id="top">
+                <input type="button" onclick="logIn()" value="Вход" />
+                <input type="button" onclick="registration()" value="Регистрация" />
+            </form>
+		</header>
+		<div id="menu">
+			<ul>
+				<li><a href="#">Главная</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">Галерея</a></li>
+				<li><a href="#">Контакты</a></li>
+				<li><a href="#">О нас</a></li>
+			</ul>
+		</div>
+		<div class="content">
+            <img alt="" id="gallery"  oncontextmenu="contextMenuImg(event);return false;" />
+            <form id="management">
+                <input type="button" onclick="ago()" value="&#9668; Назад" />
+                <input type="button" onclick="forward()" value="Вперед &#9658;" />
+            </form>            
+		</div>		
+	</div>
+	<footer>
+		<p>footer</p>
+	</footer>
+	<div  id="login" onclick="clickDiv(event)">
+		<form>
+			<p>Логин <input type="text" name="name" /></p>
+			<p>Пароль <input type="password" name="password" /></p>
+			<input type="submit" value="Вход" />
+		</form>
+	</div>
+	<div  id="registration" onclick="clickDiv(event)">
+		<form name="registr" onsubmit="return validateForm()">
+			<p>Имя <input type="text" name="name" oninput ="inputTextInput()" /></p>
+			<p>Фамилия <input type="text" name="surname" /></p>
+			<p>Город <input type="text" name="city" /></p>
+			<p>Телефон <input type="tel" name="phone" /></p>
+			<p>Email <input type="email" name="email" /></p>
+			<p>Логин <input type="text" name="login" /></p>
+			<p>Пароль <input type="password" name="password" /></p>
+			<input type="submit" value="Регистрация" />
+		</form>
+	</div>
+    <div id="context_menu">
+        <ul>
+            <li onclick="turnToLeft()">&#8634; повернуть на 90&deg; влево</li>
+            <li onclick="turnToRight()">&#8635; повернуть на 90&deg; вправо</li>
+        </ul>
+    </div>
+</body>
+</html>

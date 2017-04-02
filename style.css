@@ -1,0 +1,124 @@
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+header{
+	height: 150px;
+	background-color: aqua;
+	border-radius: 0 0 15px 15px;
+    overflow: visible;
+}
+header h1{
+	margin: 0;
+	padding: 40px 40px 0;
+    float: left;
+}
+footer{
+	height: 50px;
+	background-color: yellow;
+	border-radius: 15px 15px 0 0;
+}
+footer p{
+	margin: 0;
+	padding: 15px 0;
+	text-align: center;
+}
+.container, footer{
+	margin: 0 auto;
+	min-width: 800px;
+	max-width: 1200px;
+}
+.container{
+	min-height: 100%;
+	margin-bottom: -50px;
+	padding-bottom: 50px;
+    text-align: center;
+}
+.content{
+	padding: 10px;
+	margin-left: 250px;
+}
+#top{
+    float: right;
+    margin: 20px;
+	width: 100px;
+	background-color: #fff;
+	border-radius: 7px;
+	padding: 5px;
+	box-shadow: 0 -2px 2px 0 rgba(0,0,0,0.5);
+}
+input{
+	border-radius: 7px;
+	padding: 5px;
+	margin: 3px;
+}
+#registration, #login{
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, .75);
+	display: none;
+}
+#registration form, #login form{
+	padding: 20px;
+	width: 300px;
+	background-color: #eee;
+	overflow: hidden;
+	border-radius: 7px;	
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#registration input, #login input{
+	float: right;
+}
+#gallery{
+    display: inline-block;
+	max-width: 100%;
+}
+#context_menu{
+    position: fixed;
+    display: none;
+  	z-index: 10;
+	background-color: aliceblue;
+}
+#context_menu ul{
+    border-bottom: 1px solid #000;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#context_menu ul li:hover {
+	background-color: cornflowerblue;
+}
+#context_menu ul li{
+    border: 1px solid #000;
+    border-bottom: none;
+	cursor: default;
+	padding: 5px 7px;
+}
+
+#menu{
+	float: left;
+	width: 250px;
+}
+#menu ul{
+	list-style: none;
+	padding: 10px;
+	//margin: 0;
+}
+#menu a{
+	display: inline-block;
+	padding: 5px 7px;
+	margin: 5px;
+	text-decoration: none;
+	background-color: #eee;
+	min-width: 90%;
+	border-radius: 7px;
+	box-shadow: 2px 2px 2px;
+}
